@@ -10,6 +10,6 @@
     <string name="GPAInput3">GPA 3</string>
     <string name="GPAInput4">GPA 4</string>
     <string name="GPAInput5">GPA 5</string>
-
-
+    <string name="CalcGPAButton">Calculate GPA</string>
+    <string name="DispGPA">Your GPA</string>
 </resources>

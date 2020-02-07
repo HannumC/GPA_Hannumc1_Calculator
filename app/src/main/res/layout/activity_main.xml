@@ -8,11 +8,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/GPA1View2"
+        android:id="@+id/GPA1View"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/GPALabel1"
         android:textSize="18sp"
@@ -23,7 +23,7 @@
         android:id="@+id/GPAInput1"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:gravity="center"
@@ -38,7 +38,7 @@
         android:id="@+id/GPAInput2"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:gravity="center"
@@ -53,18 +53,18 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/GPALabel2"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GPA1View2" />
+        app:layout_constraintTop_toBottomOf="@+id/GPA1View" />
 
     <EditText
         android:id="@+id/GPAInput3"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:gravity="center"
@@ -79,7 +79,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/GPALabel3"
         android:textSize="18sp"
@@ -90,7 +90,7 @@
         android:id="@+id/GPAInput4"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:gravity="center"
@@ -105,7 +105,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/GPALabel4"
         android:textSize="18sp"
@@ -116,7 +116,7 @@
         android:id="@+id/GPAInput5"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
         android:ems="10"
         android:gravity="center"
@@ -131,7 +131,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/GPALabel5"
         android:textSize="18sp"
@@ -139,14 +139,23 @@
         app:layout_constraintTop_toBottomOf="@+id/GPA4View" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/CalcGPA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="75dp"
-        android:onClick="calculate_gpa"
-        android:text="Button"
+        android:layout_marginBottom="250dp"
+        android:text="@string/CalcGPAButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DispGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="@string/DispGPA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
