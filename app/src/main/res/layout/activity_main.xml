@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InputView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/GPA1View2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:text="@string/GPALabel1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/GPAInput1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GPA for first course"
+        android:inputType="number|numberDecimal"
+        android:text="@string/GPAInput1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/GPAInput2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GPA for second course"
+        android:inputType="number|numberDecimal"
+        android:text="@string/GPAInput2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPAInput1" />
+
+    <TextView
+        android:id="@+id/GPA2View"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/GPALabel2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPA1View2" />
+
+    <EditText
+        android:id="@+id/GPAInput3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GPA for third course"
+        android:inputType="number|numberDecimal"
+        android:text="@string/GPAInput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPAInput2" />
+
+    <TextView
+        android:id="@+id/GPA3View"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/GPALabel3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPA2View" />
+
+    <EditText
+        android:id="@+id/GPAInput4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GPA for fourth course"
+        android:inputType="number|numberDecimal"
+        android:text="@string/GPAInput4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPAInput3" />
+
+    <TextView
+        android:id="@+id/GPA4View"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/GPALabel4"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPA3View" />
+
+    <EditText
+        android:id="@+id/GPAInput5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="GPA for fifth course"
+        android:inputType="number|numberDecimal"
+        android:text="@string/GPAInput5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPAInput4" />
+
+    <TextView
+        android:id="@+id/GPA5View"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/GPALabel5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPA4View" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:onClick="calculate_gpa"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
